@@ -6,35 +6,15 @@
 
 ## 📦 Instalación y Despliegue (Remix)
 
-1. **Carga el contrato**
 
-   - Abre [Remix](https://remix.ethereum.org/) en tu navegador.
-   - Crea un nuevo archivo `SimpleSwap.sol` y pega el código fuente.
+1. **Desplegar**
 
-2. **Compilar**
-
-   - En el panel **Solidity Compiler**:
-     - Selecciona la versión **0.8.20**.
-     - Activa la optimización (por ejemplo, `Runs = 200`).
-     - Haz clic en **Compile**.
-
-3. **Desplegar**
-
-   - Ve al panel **Deploy & Run Transactions**:
-     - Elige **JavaScript VM** para pruebas locales.
-     - En **Constructor Arguments**, ingresa las direcciones de los tokens:
+   -Detalles en despliegue y pasos previos a la utilización del contrato:
+     - En tiempo de despleigue se ingresaron las direcciones de los tokens:
        - `tokenA`: `0x7e285bee81b1349634e7Dc5924377a9aa984b812` (GMA)
        - `tokenB`: `0xEB6284d3d673517B6ad8a58E6fB7552E6B7637D2` (GMB)
-     - Haz clic en **Deploy**.
+     - Posteriormente a despliegue se aplicó approve en cada token en favor del contrato SimpleSwap.
 
-4. **Aprobar tokens**
-
-   - Antes de interactuar, ejecuta en Remix:
-     ```js
-     await tokenAContract.approve(simpleSwap.address, amountA);
-     await tokenBContract.approve(simpleSwap.address, amountB);
-     ```
-   - Esto permite que `SimpleSwap` mueva tus tokens.
 
 ---
 

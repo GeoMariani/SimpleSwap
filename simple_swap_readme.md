@@ -14,6 +14,7 @@
        - `tokenA`: `0x7e285bee81b1349634e7Dc5924377a9aa984b812` (GMA)
        - `tokenB`: `0xEB6284d3d673517B6ad8a58E6fB7552E6B7637D2` (GMB)
      - Posteriormente a despliegue se aplicó approve en cada token en favor del contrato SimpleSwap.
+      - Address de contrato SimpleSwap: `0x29E515B776653Dde3264D4AC1B4d1ab8b6a5338e`
 
 
 ---
